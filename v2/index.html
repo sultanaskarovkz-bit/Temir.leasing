@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Темір Лизинг - фанера, балка и опалубка в Астане. Доставка по Казахстану</title>
+<meta name="description" content="ТОО Темір Лизинг: ламинированная фанера и деревянная балка всегда на складе в Астане. Прямые поставки с заводов, продажа и аренда опалубки, доставка по всему Казахстану.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --concrete:#ECEAE3;
+  --concrete-2:#E2DFD6;
+  --ink:#141414;
+  --flame:#E5341E;
+  --paper:#F5F4EF;
+  --line:#141414;
+  --maxw:1320px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:'Manrope',system-ui,-apple-system,sans-serif;
+  background:var(--concrete);
+  color:var(--ink);
+  line-height:1.5;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:'Oswald',sans-serif;font-weight:700;line-height:.92;letter-spacing:-.01em;text-transform:uppercase}
+::selection{background:var(--flame);color:#fff}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+.display{
+  font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;
+  line-height:.86;letter-spacing:-.015em;
+}
+.flame{color:var(--flame)}
+.tag-block{background:var(--flame);color:#fff;padding:.02em .22em;display:inline-block}
+.ink-block{background:var(--ink);color:var(--concrete);padding:.02em .22em;display:inline-block}
+.stroke-txt{
+  color:transparent;-webkit-text-stroke:2px var(--ink);
+}
+
+/* ---------- Section scaffolding ---------- */
+.section{padding:96px 0;position:relative}
+.rule{height:8px;background:var(--ink);width:100%;border:none}
+.rule-thin{height:2px;background:var(--ink);width:100%;border:none}
+.secnum{
+  font-family:'Oswald',sans-serif;font-weight:700;
+  font-size:clamp(56px,12vw,160px);line-height:.8;color:var(--flame);
+  letter-spacing:-.03em;
+}
+.kicker{
+  font-family:'Manrope',sans-serif;font-weight:800;font-size:13px;
+  letter-spacing:.28em;text-transform:uppercase;color:var(--ink);
+}
+.vside{
+  writing-mode:vertical-rl;text-orientation:mixed;
+  font-family:'Manrope',sans-serif;font-weight:800;font-size:12px;
+  letter-spacing:.32em;text-transform:uppercase;color:var(--ink);
+}
+
+/* ---------- Header ---------- */
+header{
+  position:sticky;top:0;z-index:90;background:var(--concrete);
+  border-bottom:4px solid var(--ink);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:12px;font-family:'Oswald',sans-serif;
+  font-weight:700;text-transform:uppercase;letter-spacing:.02em;font-size:22px;line-height:1}
+.brand .mark{
+  width:34px;height:34px;background:var(--flame);display:grid;place-items:center;flex:none;
+}
+.brand .mark svg{width:20px;height:20px}
+.brand b{color:var(--flame)}
+.nav-links{display:flex;gap:26px;align-items:center}
+.nav-links a{font-weight:700;font-size:14px;letter-spacing:.02em;text-transform:uppercase;font-family:'Manrope',sans-serif}
+.nav-links a:hover{color:var(--flame)}
+.nav-cta{
+  background:var(--ink);color:var(--concrete);padding:11px 18px;font-weight:800;
+  font-size:13px;letter-spacing:.04em;text-transform:uppercase;display:inline-flex;gap:8px;align-items:center;
+}
+.nav-cta:hover{background:var(--flame);color:#fff}
+.burger{display:none;background:none;border:3px solid var(--ink);width:46px;height:46px;cursor:pointer;align-items:center;justify-content:center}
+.burger svg{width:22px;height:22px}
+.mobile-menu{display:none}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;padding:0;border-bottom:8px solid var(--ink);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.35fr .85fr;min-height:84vh}
+.hero-left{padding:48px 28px 40px;display:flex;flex-direction:column;justify-content:space-between;position:relative;z-index:3}
+.hero-top-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:28px}
+.pill{border:2px solid var(--ink);padding:7px 13px;font-weight:800;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.pill.fill{background:var(--flame);color:#fff;border-color:var(--flame)}
+.hero-title{
+  font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;
+  font-size:clamp(58px,11.2vw,168px);line-height:.82;letter-spacing:-.02em;
+}
+.hero-title .line2{margin-left:.04em}
+.hero-sub{max-width:540px;font-size:clamp(16px,1.5vw,19px);font-weight:500;margin-top:26px;color:#2a2a2a}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:15px;
+  padding:16px 24px;letter-spacing:.02em;text-transform:uppercase;cursor:pointer;border:3px solid var(--ink);transition:transform .15s ease,background .15s ease,color .15s ease}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:var(--flame);color:#fff;border-color:var(--flame)}
+.btn-primary:hover{transform:translate(-2px,-2px)}
+.btn-dark{background:var(--ink);color:var(--concrete)}
+.btn-dark:hover{background:transparent;color:var(--ink)}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--concrete)}
+.hero-right{position:relative;border-left:8px solid var(--ink);min-height:340px;background:var(--ink)}
+.hero-right img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(.15) contrast(1.05)}
+.hero-vlabel{position:absolute;left:-30px;top:50%;transform:translateY(-50%);z-index:4}
+.hero-photo-tag{
+  position:absolute;left:-1px;bottom:34px;background:var(--flame);color:#fff;
+  font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;
+  font-size:clamp(26px,3vw,46px);padding:6px 18px;z-index:5;letter-spacing:.01em;
+}
+
+/* ---------- Marquee ---------- */
+.marquee{background:var(--ink);overflow:hidden;border-bottom:8px solid var(--flame);padding:18px 0}
+.marquee-track{display:flex;gap:0;white-space:nowrap;width:max-content;animation:scroll-x 26s linear infinite}
+.marquee-track span{
+  font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;
+  font-size:clamp(34px,5vw,68px);line-height:1;padding:0 .35em;
+  color:transparent;-webkit-text-stroke:1.6px var(--concrete);letter-spacing:.01em;
+}
+.marquee-track span.solid{color:var(--flame);-webkit-text-stroke:0}
+.marquee-track .dot{color:var(--flame);-webkit-text-stroke:0;padding:0 .15em}
+@keyframes scroll-x{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- Advantages ---------- */
+.adv-head{display:grid;grid-template-columns:auto 1fr;gap:30px;align-items:end;margin-bottom:54px}
+.adv-head h2{font-size:clamp(40px,6.4vw,96px)}
+.adv-list{display:grid;gap:0;border-top:4px solid var(--ink)}
+.adv-row{
+  display:grid;grid-template-columns:160px 1fr;gap:30px;align-items:start;
+  padding:38px 0;border-bottom:4px solid var(--ink);position:relative;transition:padding-left .2s ease;
+}
+.adv-row:hover{padding-left:14px}
+.adv-row .num{
+  font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(64px,9vw,128px);line-height:.78;
+  color:transparent;-webkit-text-stroke:2px var(--ink);letter-spacing:-.03em;transition:all .2s ease;
+}
+.adv-row:hover .num{color:var(--flame);-webkit-text-stroke:0}
+.adv-row .adv-body h3{font-size:clamp(26px,3.4vw,42px);margin-bottom:12px}
+.adv-row .adv-body h3 em{font-style:normal;background:var(--flame);color:#fff;padding:0 .14em}
+.adv-row .adv-body p{max-width:680px;font-size:17px;font-weight:500;color:#2a2a2a}
+
+/* ---------- Product editorial ---------- */
+.product{border-top:8px solid var(--ink);position:relative;padding:0;overflow:hidden}
+.product-inner{padding:74px 0}
+.prod-meta{display:flex;align-items:flex-start;gap:22px;flex-wrap:wrap}
+.prod-bignum{
+  font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(120px,22vw,300px);line-height:.7;
+  color:var(--flame);letter-spacing:-.04em;pointer-events:none;
+}
+.prod-title{font-size:clamp(52px,10vw,150px);line-height:.82;margin:6px 0 0}
+.prod-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:start;margin-top:40px}
+.prod-text .lead{font-size:clamp(18px,2vw,23px);font-weight:600;margin-bottom:26px;max-width:560px}
+.spec-list{border-top:3px solid var(--ink)}
+.spec-list .spec{display:flex;justify-content:space-between;gap:18px;padding:14px 0;border-bottom:2px solid rgba(20,20,20,.25);font-weight:600}
+.spec-list .spec dt{color:#555;font-size:14px;letter-spacing:.04em;text-transform:uppercase;font-weight:700}
+.spec-list .spec dd{text-align:right;font-weight:700;font-size:16px}
+.feat-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chip{display:inline-flex;align-items:center;gap:9px;border:2px solid var(--ink);padding:9px 14px;font-weight:700;font-size:14px}
+.chip svg{width:16px;height:16px;color:var(--flame);flex:none}
+.prod-photos{display:grid;gap:18px}
+.photo-frame{position:relative;border:5px solid var(--ink);overflow:hidden;background:var(--ink)}
+.photo-frame img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.photo-frame.tall img{aspect-ratio:3/4}
+.photo-cap{position:absolute;left:0;bottom:0;background:var(--ink);color:var(--concrete);font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:7px 12px}
+.prod-cta{margin-top:30px}
+
+/* product 2 dark variant */
+.product.dark{background:var(--ink);color:var(--concrete)}
+.product.dark .prod-title{color:var(--concrete)}
+.product.dark .spec-list{border-color:var(--concrete)}
+.product.dark .spec-list .spec{border-color:rgba(236,234,227,.25)}
+.product.dark .spec-list .spec dt{color:#b7b3a8}
+.product.dark .chip{border-color:var(--concrete)}
+.product.dark .photo-frame{border-color:var(--concrete)}
+.product.dark .photo-cap{background:var(--concrete);color:var(--ink)}
+.product.dark .vside{color:var(--concrete)}
+
+/* ---------- Assortment ---------- */
+.assort-head{display:grid;grid-template-columns:auto 1fr;gap:30px;align-items:end;margin-bottom:48px}
+.assort-head h2{font-size:clamp(38px,6vw,90px)}
+.assort-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:4px solid var(--ink);border-left:4px solid var(--ink)}
+.assort-cell{
+  border-right:4px solid var(--ink);border-bottom:4px solid var(--ink);
+  padding:34px 30px;position:relative;background:var(--concrete);transition:background .18s ease,color .18s ease;
+}
+.assort-cell:hover{background:var(--ink);color:var(--concrete)}
+.assort-cell .ac-num{font-family:'Oswald',sans-serif;font-weight:700;font-size:18px;letter-spacing:.1em;color:var(--flame)}
+.assort-cell h3{font-size:clamp(24px,3vw,34px);margin:14px 0 12px}
+.assort-cell p{font-size:16px;font-weight:500;max-width:420px}
+.assort-cell .ac-tag{display:inline-block;margin-top:16px;font-weight:800;font-size:12px;letter-spacing:.12em;text-transform:uppercase;border:2px solid currentColor;padding:5px 11px}
+
+/* ---------- About + stats ---------- */
+.about{border-top:8px solid var(--ink);background:var(--paper)}
+.about-grid{display:grid;grid-template-columns:1fr .9fr;gap:50px;align-items:center}
+.about h2{font-size:clamp(42px,7vw,108px);margin-bottom:24px}
+.about h2 .tag-block{margin-top:.06em}
+.about p{font-size:18px;font-weight:500;max-width:560px;color:#2a2a2a}
+.about-photo{border:6px solid var(--ink);overflow:hidden;position:relative;background:var(--ink)}
+.about-photo img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/5}
+.about-photo .photo-cap{font-size:12px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:8px solid var(--ink);margin-top:60px}
+.stat{padding:38px 22px;border-right:4px solid var(--ink);position:relative}
+.stat:last-child{border-right:none}
+.stat .sv{font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(44px,6vw,82px);line-height:.85;color:var(--flame)}
+.stat .sl{font-weight:700;font-size:14px;letter-spacing:.04em;margin-top:10px;text-transform:uppercase}
+
+/* ---------- Quality ---------- */
+.quality{border-top:8px solid var(--ink);background:var(--ink);color:var(--concrete)}
+.quality-grid{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:start}
+.quality h2{font-size:clamp(40px,6.4vw,96px);color:var(--concrete)}
+.quality h2 .flame{color:var(--flame)}
+.quality .q-lead{font-size:clamp(18px,2vw,22px);font-weight:600;max-width:640px;margin-top:8px}
+.q-badges{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.q-badge{display:inline-flex;align-items:center;gap:11px;border:2px solid var(--concrete);padding:12px 16px;font-weight:700;font-size:14px}
+.q-badge svg{width:22px;height:22px;color:var(--flame);flex:none}
+
+/* ---------- Gallery + video ---------- */
+.gallery{border-top:8px solid var(--ink)}
+.gal-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:20px;margin-top:40px}
+.video-box{border:6px solid var(--ink);position:relative;background:var(--ink);overflow:hidden}
+.video-box video{width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:16/10}
+.gal-col{display:grid;grid-template-rows:1fr 1fr;gap:20px}
+.gal-col .photo-frame img{aspect-ratio:auto;height:100%}
+
+/* ---------- Instagram ---------- */
+.insta{border-top:8px solid var(--ink);background:var(--paper)}
+.insta-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:36px}
+.insta-head h2{font-size:clamp(38px,6vw,88px)}
+.insta-meta{font-weight:700;font-size:16px}
+.insta-meta b{color:var(--flame)}
+.insta-shots{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:760px}
+.insta-shot{border:5px solid var(--ink);overflow:hidden;background:var(--ink)}
+.insta-shot img{width:100%;height:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+.insta-cta{margin-top:30px}
+
+/* ---------- Documents ---------- */
+.docs{border-top:8px solid var(--ink)}
+.docs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+.doc-card{
+  border:4px solid var(--ink);padding:30px 26px;display:flex;flex-direction:column;gap:16px;
+  background:var(--concrete);transition:transform .15s ease,background .15s ease,color .15s ease;min-height:200px;justify-content:space-between;
+}
+.doc-card:hover{background:var(--flame);color:#fff;border-color:var(--flame);transform:translate(-3px,-3px)}
+.doc-card .doc-ic{width:40px;height:40px}
+.doc-card h3{font-size:24px}
+.doc-card .doc-go{font-weight:800;font-size:13px;letter-spacing:.1em;text-transform:uppercase;display:inline-flex;align-items:center;gap:8px}
+.doc-card .doc-go svg{width:18px;height:18px}
+
+/* ---------- Contacts ---------- */
+.contacts{border-top:8px solid var(--ink);background:var(--ink);color:var(--concrete)}
+.contacts h2{font-size:clamp(46px,8vw,128px);color:var(--concrete);line-height:.84}
+.contacts h2 .flame{color:var(--flame)}
+.contacts-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;margin-top:40px;align-items:start}
+.contacts-lead{font-size:clamp(18px,2vw,22px);font-weight:600;max-width:520px}
+.contact-list{display:grid;gap:0;border-top:3px solid var(--concrete)}
+.contact-item{display:flex;align-items:center;gap:18px;padding:20px 0;border-bottom:2px solid rgba(236,234,227,.25)}
+.contact-item .ci-ic{width:44px;height:44px;border:2px solid var(--concrete);display:grid;place-items:center;flex:none}
+.contact-item .ci-ic svg{width:22px;height:22px;color:var(--flame)}
+.contact-item .ci-k{font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#b7b3a8}
+.contact-item .ci-v{font-weight:700;font-size:19px}
+.contact-item a.ci-v:hover{color:var(--flame)}
+.contacts-cta{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+.contacts .btn-primary{border-color:var(--flame)}
+.contacts .btn-ghost{color:var(--concrete);border-color:var(--concrete)}
+.contacts .btn-ghost:hover{background:var(--concrete);color:var(--ink)}
+
+/* ---------- Footer ---------- */
+footer{background:var(--concrete);border-top:8px solid var(--flame);padding:46px 0 38px}
+.footer-top{display:flex;justify-content:space-between;align-items:flex-start;gap:30px;flex-wrap:wrap}
+.footer-nav{display:flex;flex-wrap:wrap;gap:20px}
+.footer-nav a{font-weight:700;font-size:13px;letter-spacing:.04em;text-transform:uppercase}
+.footer-nav a:hover{color:var(--flame)}
+.footer-bottom{margin-top:34px;padding-top:22px;border-top:2px solid var(--ink);display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:13px;font-weight:600;color:#444}
+
+/* ---------- FAB ---------- */
+.fab{
+  position:fixed;right:22px;bottom:22px;z-index:95;width:62px;height:62px;border-radius:50%;
+  background:#25D366;display:grid;place-items:center;box-shadow:0 8px 26px rgba(0,0,0,.28);border:3px solid #fff;
+  transition:transform .15s ease;
+}
+.fab:hover{transform:scale(1.07)}
+.fab svg{width:32px;height:32px;color:#fff}
+
+/* ---------- Reveal animation ---------- */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+:focus-visible{outline:3px solid var(--flame);outline-offset:3px}
+
+/* ---------- Responsive ---------- */
+@media(max-width:1000px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-right{border-left:none;border-top:8px solid var(--ink);min-height:300px}
+  .hero-vlabel{display:none}
+  .prod-grid{grid-template-columns:1fr;gap:32px}
+  .about-grid{grid-template-columns:1fr;gap:34px}
+  .quality-grid{grid-template-columns:1fr;gap:24px}
+  .contacts-grid{grid-template-columns:1fr;gap:34px}
+  .gal-grid{grid-template-columns:1fr}
+  .gal-col{grid-template-rows:auto auto}
+  .gal-col .photo-frame img{aspect-ratio:16/10}
+}
+@media(max-width:780px){
+  .nav-links{display:none}
+  .nav-cta{display:none}
+  .burger{display:flex}
+  .mobile-menu{
+    display:none;position:fixed;inset:0;z-index:100;background:var(--ink);color:var(--concrete);
+    flex-direction:column;padding:26px;
+  }
+  .mobile-menu.open{display:flex}
+  .mm-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px}
+  .mm-top .brand{color:var(--concrete)}
+  .mm-top .brand b{color:var(--flame)}
+  .mm-close{background:none;border:3px solid var(--concrete);width:46px;height:46px;cursor:pointer;display:grid;place-items:center}
+  .mm-close svg{width:22px;height:22px;color:var(--concrete)}
+  .mobile-menu a{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;font-size:30px;padding:13px 0;border-bottom:2px solid rgba(236,234,227,.2)}
+  .mobile-menu a:hover{color:var(--flame)}
+  .mm-wa{margin-top:26px;background:var(--flame);color:#fff;text-align:center;padding:16px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;border:none}
+}
+@media(max-width:760px){
+  .section{padding:64px 0}
+  .adv-row{grid-template-columns:1fr;gap:6px;padding:28px 0}
+  .adv-head{grid-template-columns:1fr;gap:14px}
+  .assort-grid{grid-template-columns:1fr}
+  .assort-head{grid-template-columns:1fr;gap:14px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stat{border-bottom:4px solid var(--ink)}
+  .stat:nth-child(odd){border-right:4px solid var(--ink)}
+  .stat:nth-child(even){border-right:none}
+  .docs-grid{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column}
+  .hero-photo-tag{font-size:24px;bottom:18px}
+}
+@media(max-width:420px){
+  .wrap{padding:0 18px}
+  .hero-left{padding:34px 18px 30px}
+  .btn{width:100%;justify-content:center}
+  .hero-actions{flex-direction:column}
+}
+
+@media(prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto!important}
+  .marquee-track{animation:none!important;transform:none!important}
+  .reveal{opacity:1!important;transform:none!important;transition:none!important}
+  .btn:hover,.doc-card:hover,.fab:hover,.adv-row:hover{transform:none!important}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="Темір Лизинг, на главную">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M3 7h18M7 7v13M17 7v13M3 20h18" stroke="#fff" stroke-width="2.4" stroke-linecap="square"/></svg>
+      </span>
+      <span>ТЕМІР <b>ЛИЗИНГ</b></span>
+    </a>
+    <nav class="nav-links" aria-label="Основная навигация">
+      <a href="#advantages">Почему мы</a>
+      <a href="#plywood">Фанера</a>
+      <a href="#beam">Балка</a>
+      <a href="#assortment">Ассортимент</a>
+      <a href="#about">О компании</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a href="https://wa.me/77779533333" class="nav-cta">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.8-.6-3-1.3-5-4.4-5.1-4.6-.2-.2-1.3-1.7-1.3-3.2s.8-2.3 1.1-2.6c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.6-.1l.8-1c.2-.3.4-.2.6-.1l2 1c.3.1.4.2.5.3.1.2.1.8-.1 1.5z"/></svg>
+      WhatsApp
+    </a>
+    <button class="burger" aria-label="Открыть меню" id="burger">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="#141414" stroke-width="2.6" stroke-linecap="square"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mm-top">
+    <span class="brand">ТЕМІР <b>ЛИЗИНГ</b></span>
+    <button class="mm-close" aria-label="Закрыть меню" id="mmClose">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.6" stroke-linecap="square"/></svg>
+    </button>
+  </div>
+  <a href="#advantages" class="mm-link">Почему мы</a>
+  <a href="#plywood" class="mm-link">Фанера</a>
+  <a href="#beam" class="mm-link">Балка</a>
+  <a href="#assortment" class="mm-link">Ассортимент</a>
+  <a href="#about" class="mm-link">О компании</a>
+  <a href="#quality" class="mm-link">Качество</a>
+  <a href="#gallery" class="mm-link">Галерея</a>
+  <a href="#contacts" class="mm-link">Контакты</a>
+  <a href="https://wa.me/77779533333" class="mm-wa">Написать в WhatsApp</a>
+</div>
+
+<span id="top"></span>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <div>
+        <div class="hero-top-row">
+          <span class="pill fill">10 лет на рынке Казахстана</span>
+          <span class="pill">Склад в Астане</span>
+          <span class="pill">Официальный дилер заводов</span>
+        </div>
+        <h1 class="hero-title">
+          <span>ФАНЕРА</span><br>
+          <span>И <span class="flame">БАЛКА</span></span><br>
+          <span class="line2">ДЛЯ СТРОЙКИ</span>
+        </h1>
+        <p class="hero-sub">Всегда есть на складе в Астане. Привезём прямо на ваш объект по всему Казахстану. Прямые поставки с заводов.</p>
+      </div>
+      <div class="hero-actions">
+        <a href="https://wa.me/77779533333" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.8-.6-3-1.3-5-4.4-5.1-4.6-.2-.2-1.3-1.7-1.3-3.2s.8-2.3 1.1-2.6c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.6-.1l.8-1c.2-.3.4-.2.6-.1l2 1c.3.1.4.2.5.3.1.2.1.8-.1 1.5z"/></svg>
+          Написать в WhatsApp
+        </a>
+        <a href="#plywood" class="btn btn-ghost">
+          Смотреть продукцию
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <span class="vside hero-vlabel">Опалубка · стройматериалы · оборудование</span>
+      <img src="../assets/02_image.jpg" alt="Стопки ламинированной фанеры с белой мерной сеткой на складе">
+      <span class="hero-photo-tag">СО СКЛАДА</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="solid">ФАНЕРА</span><span class="dot">/</span><span>БАЛКА</span><span class="dot">/</span><span>ОПАЛУБКА</span><span class="dot">/</span><span class="solid">ЛЕСА</span><span class="dot">/</span><span>КРЕПЁЖ</span><span class="dot">/</span><span>АРЕНДА</span><span class="dot">/</span>
+    <span class="solid">ФАНЕРА</span><span class="dot">/</span><span>БАЛКА</span><span class="dot">/</span><span>ОПАЛУБКА</span><span class="dot">/</span><span class="solid">ЛЕСА</span><span class="dot">/</span><span>КРЕПЁЖ</span><span class="dot">/</span><span>АРЕНДА</span><span class="dot">/</span>
+  </div>
+</div>
+
+<!-- ============ ADVANTAGES ============ -->
+<section class="section" id="advantages">
+  <div class="wrap">
+    <div class="adv-head reveal">
+      <span class="secnum">01</span>
+      <div>
+        <span class="kicker">Почему берут у нас</span>
+        <h2 class="display">ТРИ ПРИЧИНЫ <span class="flame">РАБОТАТЬ</span></h2>
+      </div>
+    </div>
+    <div class="adv-list">
+      <div class="adv-row reveal">
+        <span class="num">01</span>
+        <div class="adv-body">
+          <h3>Всегда <em>в наличии</em></h3>
+          <p>Фанера и балка всегда на складе в Астане. Отгружаем в день заказа, не нужно ждать неделями.</p>
+        </div>
+      </div>
+      <div class="adv-row reveal">
+        <span class="num">02</span>
+        <div class="adv-body">
+          <h3>Выгодная <em>цена</em></h3>
+          <p>Возим напрямую с заводов, без посредников. Поэтому цена честная и выгодная. Постоянным клиентам - лучше условия.</p>
+        </div>
+      </div>
+      <div class="adv-row reveal">
+        <span class="num">03</span>
+        <div class="adv-body">
+          <h3>Доставка <em>на объект</em></h3>
+          <p>Привезём материал прямо на стройку: Астана, Алматы, Шымкент, Караганда, Атырау и весь Казахстан.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCT 1: PLYWOOD ============ -->
+<section class="product" id="plywood">
+  <div class="wrap product-inner">
+    <div class="prod-meta reveal">
+      <span class="vside">Главный товар</span>
+      <div>
+        <span class="secnum" style="font-size:clamp(40px,7vw,90px)">02</span>
+        <div class="prod-bignum">01</div>
+        <h2 class="prod-title display">ЛАМИНИРОВАННАЯ<br><span class="flame">ФАНЕРА</span></h2>
+      </div>
+    </div>
+    <div class="prod-grid">
+      <div class="prod-text reveal">
+        <p class="lead">Прочные гладкие листы фанеры для стройки. Поверхность ровная и не боится воды, служит долго и выдерживает много заливок бетона.</p>
+        <dl class="spec-list">
+          <div class="spec"><dt>Размер листа</dt><dd>1220 x 2440 мм</dd></div>
+          <div class="spec"><dt>Толщина</dt><dd>18 и 21 мм</dd></div>
+          <div class="spec"><dt>Материал</dt><dd>берёза</dd></div>
+          <div class="spec"><dt>Влагостойкость</dt><dd>да, не боится воды</dd></div>
+          <div class="spec"><dt>Разметка</dt><dd>сетка 100 мм для резки</dd></div>
+        </dl>
+        <div class="feat-chips">
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="square"/></svg>Ровная гладкая поверхность</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="square"/></svg>Не боится влаги</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="square"/></svg>Служит долго</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="square"/></svg>Сетка-разметка для точной резки</span>
+        </div>
+        <div class="prod-cta">
+          <a href="https://wa.me/77779533333" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.8-.6-3-1.3-5-4.4-5.1-4.6-.2-.2-1.3-1.7-1.3-3.2s.8-2.3 1.1-2.6c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.6-.1l.8-1c.2-.3.4-.2.6-.1l2 1c.3.1.4.2.5.3.1.2.1.8-.1 1.5z"/></svg>
+            Узнать наличие фанеры
+          </a>
+        </div>
+      </div>
+      <div class="prod-photos reveal">
+        <div class="photo-frame">
+          <img src="../assets/02_image.jpg" alt="Стопки коричнево-янтарной ламинированной фанеры с белой мерной сеткой">
+          <span class="photo-cap">Фанера на складе</span>
+        </div>
+        <div class="photo-frame">
+          <img src="../assets/03_image.jpg" alt="Лист берёзовой ламинированной фанеры с заводской этикеткой">
+          <span class="photo-cap">Заводская этикетка</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCT 2: BEAM ============ -->
+<section class="product dark" id="beam">
+  <div class="wrap product-inner">
+    <div class="prod-meta reveal">
+      <span class="vside">Главный товар</span>
+      <div>
+        <span class="secnum" style="font-size:clamp(40px,7vw,90px)">03</span>
+        <div class="prod-bignum">02</div>
+        <h2 class="prod-title display">ДЕРЕВЯННАЯ<br><span class="flame">БАЛКА</span></h2>
+      </div>
+    </div>
+    <div class="prod-grid">
+      <div class="prod-photos reveal">
+        <div class="photo-frame tall">
+          <img src="../assets/05_image.jpg" alt="Ярко-жёлтая деревянная двутавровая балка на белом фоне">
+          <span class="photo-cap">Двутавровая балка</span>
+        </div>
+      </div>
+      <div class="prod-text reveal">
+        <p class="lead">Лёгкая и прочная деревянная балка для стройки. Её удобно ставить руками, она держит большую нагрузку и служит много раз. Можно купить или взять в аренду.</p>
+        <dl class="spec-list">
+          <div class="spec"><dt>Высота</dt><dd>200 мм</dd></div>
+          <div class="spec"><dt>Форма</dt><dd>двутавр, как буква H</dd></div>
+          <div class="spec"><dt>Условия</dt><dd>покупка и аренда</dd></div>
+        </dl>
+        <div class="feat-chips">
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="square"/></svg>Лёгкая, ставится вручную</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="square"/></svg>Прочная, держит нагрузку</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="square"/></svg>Используется много раз</span>
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.6" stroke-linecap="square"/></svg>Продажа и аренда</span>
+        </div>
+        <div class="prod-cta">
+          <a href="https://wa.me/77779533333" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.8-.6-3-1.3-5-4.4-5.1-4.6-.2-.2-1.3-1.7-1.3-3.2s.8-2.3 1.1-2.6c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.6-.1l.8-1c.2-.3.4-.2.6-.1l2 1c.3.1.4.2.5.3.1.2.1.8-.1 1.5z"/></svg>
+            Узнать про балку
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ASSORTMENT ============ -->
+<section class="section" id="assortment">
+  <div class="wrap">
+    <div class="assort-head reveal">
+      <span class="secnum">04</span>
+      <div>
+        <span class="kicker">Купить или арендовать</span>
+        <h2 class="display">ОСТАЛЬНОЙ <span class="flame">АССОРТИМЕНТ</span></h2>
+        <p style="margin-top:14px;font-weight:500;max-width:560px">Кроме фанеры и балки есть опалубка, строительные леса и детали к ним. Купить или взять в аренду.</p>
+      </div>
+    </div>
+    <div class="assort-grid">
+      <div class="assort-cell reveal">
+        <span class="ac-num">01</span>
+        <h3>Щитовая опалубка ALFA</h3>
+        <p>Большие прочные щиты-формы для стен и колонн, с фанерным покрытием. Есть новые, б/у и в аренду.</p>
+        <span class="ac-tag">Продажа · аренда</span>
+      </div>
+      <div class="assort-cell reveal">
+        <span class="ac-num">02</span>
+        <h3>Опалубка для колонн</h3>
+        <p>Готовые формы для бетонных колонн разного размера, высотой до 3 метров. Быстро собираются.</p>
+        <span class="ac-tag">Высота до 3 м</span>
+      </div>
+      <div class="assort-cell reveal">
+        <span class="ac-num">03</span>
+        <h3>Строительные леса</h3>
+        <p>Опоры и леса для бетонных перекрытий, высотой до 20 метров. Больше 200 комплектов в наличии.</p>
+        <span class="ac-tag">200+ комплектов</span>
+      </div>
+      <div class="assort-cell reveal">
+        <span class="ac-num">04</span>
+        <h3>Детали и крепёж</h3>
+        <p>Замки, винты, гайки, подкосы и другие детали для сборки опалубки.</p>
+        <span class="ac-tag">Всё для сборки</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT + STATS ============ -->
+<section class="section about" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="reveal">
+        <span class="kicker">О компании</span>
+        <h2 class="display">10 ЛЕТ <span class="tag-block">НА СТРОЙКАХ</span> КАЗАХСТАНА</h2>
+        <p style="margin-top:22px">Уже 10 лет компания «Темір Лизинг» продаёт и сдаёт в аренду фанеру, деревянную балку и опалубку по всему Казахстану. Мы официальный дилер заводов и работаем с крупными стройками страны.</p>
+      </div>
+      <div class="about-photo reveal">
+        <img src="../assets/04_image.jpg" alt="Фура с пакетами фанеры, доставка материала на объект">
+        <span class="photo-cap">Доставка на объект</span>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat reveal"><div class="sv">10</div><div class="sl">лет на рынке</div></div>
+      <div class="stat reveal"><div class="sv">200+</div><div class="sl">комплектов в наличии</div></div>
+      <div class="stat reveal"><div class="sv">6+</div><div class="sl">городов доставки</div></div>
+      <div class="stat reveal"><div class="sv">UZ·KG</div><div class="sl">экспорт в Узбекистан и Кыргызстан</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUALITY ============ -->
+<section class="section quality" id="quality">
+  <div class="wrap">
+    <div class="quality-grid">
+      <span class="secnum">05</span>
+      <div class="reveal">
+        <span class="kicker" style="color:#b7b3a8">Качество и гарантии</span>
+        <h2 class="display">ЗАВОДСКОЙ ТОВАР <span class="flame">С ДОКУМЕНТАМИ</span></h2>
+        <p class="q-lead">Весь товар заводской, с документами. Мы официальный дилер завода «Орион». На фанеру и опалубку есть сертификаты и соответствие ГОСТ. Качество проверено на стройках Астаны, Алматы и Караганды.</p>
+        <div class="q-badges">
+          <span class="q-badge"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.5 8-8 11-4.5-3-8-6-8-11V5l8-3z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Официальный дилер «Орион»</span>
+          <span class="q-badge"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/></svg>Сертификаты и ГОСТ</span>
+          <span class="q-badge"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>Проверено на стройках страны</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY + VIDEO ============ -->
+<section class="section gallery" id="gallery">
+  <div class="wrap">
+    <div class="adv-head reveal">
+      <span class="secnum">06</span>
+      <div>
+        <span class="kicker">Галерея и видео</span>
+        <h2 class="display">СО СКЛАДА <span class="flame">И С ОБЪЕКТОВ</span></h2>
+        <p style="margin-top:12px;font-weight:500;max-width:520px">Реальные фото и видео нашей фанеры со склада и с объектов.</p>
+      </div>
+    </div>
+    <div class="gal-grid">
+      <div class="video-box reveal">
+        <video controls preload="none" playsinline poster="../assets/07_image.jpg">
+          <source src="../assets/08_video.mp4" type="video/mp4">
+          Ваш браузер не поддерживает видео.
+        </video>
+      </div>
+      <div class="gal-col reveal">
+        <div class="photo-frame">
+          <img src="../assets/02_image.jpg" alt="Фанера с мерной сеткой на складе в Астане">
+          <span class="photo-cap">Склад в Астане</span>
+        </div>
+        <div class="photo-frame">
+          <img src="../assets/04_image.jpg" alt="Доставка фанеры фурой на строительный объект">
+          <span class="photo-cap">Доставка на объект</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSTAGRAM ============ -->
+<section class="section insta" id="instagram">
+  <div class="wrap">
+    <div class="insta-head reveal">
+      <div>
+        <span class="kicker">Инстаграм</span>
+        <h2 class="display">@TEMIR.<span class="flame">LEASING</span></h2>
+      </div>
+      <div class="insta-meta"><b>504</b> подписчика · Свежие фото фанеры, балки и отгрузок. Подпишитесь.</div>
+    </div>
+    <div class="insta-shots reveal">
+      <a class="insta-shot" href="https://www.instagram.com/temir.leasing" target="_blank" rel="noopener" aria-label="Открыть профиль Инстаграм, фото 1">
+        <img src="../assets/12_image.jpg" alt="Скриншот публикации из Инстаграма Темір Лизинг">
+      </a>
+      <a class="insta-shot" href="https://www.instagram.com/temir.leasing" target="_blank" rel="noopener" aria-label="Открыть профиль Инстаграм, фото 2">
+        <img src="../assets/13_image.jpg" alt="Скриншот публикации из Инстаграма Темір Лизинг">
+      </a>
+    </div>
+    <div class="insta-cta">
+      <a href="https://www.instagram.com/temir.leasing" target="_blank" rel="noopener" class="btn btn-dark">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg>
+        Подписаться
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOCUMENTS ============ -->
+<section class="section docs" id="docs">
+  <div class="wrap">
+    <div class="adv-head reveal">
+      <span class="secnum">07</span>
+      <div>
+        <span class="kicker">Документы</span>
+        <h2 class="display">КАТАЛОГИ <span class="flame">И СЕРТИФИКАТ</span></h2>
+      </div>
+    </div>
+    <div class="docs-grid">
+      <a class="doc-card reveal" href="../assets/catalog-formwork.pdf" target="_blank" rel="noopener">
+        <svg class="doc-ic" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 2h8l4 4v16H6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M14 2v4h4M9 13h6M9 17h6" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
+        <h3>Каталог опалубки</h3>
+        <span class="doc-go">Открыть PDF <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg></span>
+      </a>
+      <a class="doc-card reveal" href="../assets/catalog-scaffolding.pdf" target="_blank" rel="noopener">
+        <svg class="doc-ic" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 2h8l4 4v16H6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M14 2v4h4M9 13h6M9 17h6" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
+        <h3>Каталог по лесам</h3>
+        <span class="doc-go">Открыть PDF <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg></span>
+      </a>
+      <a class="doc-card reveal" href="../assets/certificate-orion.pdf" target="_blank" rel="noopener">
+        <svg class="doc-ic" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.5 8-8 11-4.5-3-8-6-8-11V5l8-3z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"/></svg>
+        <h3>Сертификат дилера</h3>
+        <span class="doc-go">Открыть PDF <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTS ============ -->
+<section class="section contacts" id="contacts">
+  <div class="wrap">
+    <span class="kicker" style="color:#b7b3a8">Контакты</span>
+    <h2 class="display reveal">ДАВАЙТЕ <span class="flame">ПОСЧИТАЕМ</span> ВАШ ЗАКАЗ</h2>
+    <div class="contacts-grid">
+      <div class="reveal">
+        <p class="contacts-lead">Напишите в WhatsApp - подскажем наличие и цену, посчитаем заказ и привезём на объект.</p>
+        <div class="contacts-cta">
+          <a href="https://wa.me/77779533333" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.8-.6-3-1.3-5-4.4-5.1-4.6-.2-.2-1.3-1.7-1.3-3.2s.8-2.3 1.1-2.6c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.6-.1l.8-1c.2-.3.4-.2.6-.1l2 1c.3.1.4.2.5.3.1.2.1.8-.1 1.5z"/></svg>
+            Написать в WhatsApp
+          </a>
+          <a href="tel:+77771221222" class="btn btn-ghost">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            Позвонить
+          </a>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="contact-list">
+          <div class="contact-item">
+            <span class="ci-ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2z"/></svg></span>
+            <div><div class="ci-k">WhatsApp / звонок</div><a class="ci-v" href="https://wa.me/77779533333">+7 777 953 33 33</a></div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span>
+            <div><div class="ci-k">Доп. телефон</div><a class="ci-v" href="tel:+77771221222">+7 777 122 12 22</a></div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></span>
+            <div><div class="ci-k">Почта</div><a class="ci-v" href="mailto:temir.expo@mail.ru">temir.expo@mail.ru</a></div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg></span>
+            <div><div class="ci-k">Инстаграм</div><a class="ci-v" href="https://www.instagram.com/temir.leasing" target="_blank" rel="noopener">@temir.leasing</a></div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-ic"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/></svg></span>
+            <div><div class="ci-k">Склад и офис</div><span class="ci-v">Астана, Казахстан</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <span class="brand" style="font-size:26px">ТЕМІР <b>ЛИЗИНГ</b></span>
+        <p style="margin-top:12px;font-weight:600;max-width:340px;color:#444">Фанера, деревянная балка и опалубка. Продажа и аренда. Доставка по всему Казахстану.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Навигация в подвале">
+        <a href="#advantages">Почему мы</a>
+        <a href="#plywood">Фанера</a>
+        <a href="#beam">Балка</a>
+        <a href="#assortment">Ассортимент</a>
+        <a href="#about">О компании</a>
+        <a href="#quality">Качество</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#docs">Документы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ТОО «Темір Лизинг». Все права защищены.</span>
+      <span>Астана · Алматы · Шымкент · Караганда · Атырау · экспорт UZ / KG</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FAB ============ -->
+<a href="https://wa.me/77779533333" class="fab" aria-label="Написать в WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.8-.6-3-1.3-5-4.4-5.1-4.6-.2-.2-1.3-1.7-1.3-3.2s.8-2.3 1.1-2.6c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.3.1.5.1.6-.1l.8-1c.2-.3.4-.2.6-.1l2 1c.3.1.4.2.5.3.1.2.1.8-.1 1.5z"/></svg>
+</a>
+
+<script>
+(function(){
+  // Mobile menu
+  var burger=document.getElementById('burger');
+  var menu=document.getElementById('mobileMenu');
+  var close=document.getElementById('mmClose');
+  function open(){menu.classList.add('open');document.body.style.overflow='hidden';}
+  function shut(){menu.classList.remove('open');document.body.style.overflow='';}
+  if(burger)burger.addEventListener('click',open);
+  if(close)close.addEventListener('click',shut);
+  Array.prototype.forEach.call(document.querySelectorAll('.mm-link'),function(a){a.addEventListener('click',shut);});
+
+  // Reveal on scroll
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els=document.querySelectorAll('.reveal');
+  if(reduce || !('IntersectionObserver' in window)){
+    Array.prototype.forEach.call(els,function(el){el.classList.add('in');});
+  }else{
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+    },{threshold:0.12,rootMargin:'0px 0px -8% 0px'});
+    Array.prototype.forEach.call(els,function(el){io.observe(el);});
+  }
+})();
+</script>
+</body>
+</html>
