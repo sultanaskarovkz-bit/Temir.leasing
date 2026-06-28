@@ -98,7 +98,7 @@ header{
 .pill.fill{background:var(--flame);color:#fff;border-color:var(--flame)}
 .hero-title{
   font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;
-  font-size:clamp(58px,11.2vw,168px);line-height:.82;letter-spacing:-.02em;
+  font-size:clamp(44px,8.4vw,100px);line-height:.86;letter-spacing:-.02em;
 }
 .hero-title .line2{margin-left:.04em}
 .hero-sub{max-width:540px;font-size:clamp(16px,1.5vw,19px);font-weight:500;margin-top:26px;color:#2a2a2a}
@@ -126,7 +126,7 @@ header{
 .marquee-track{display:flex;gap:0;white-space:nowrap;width:max-content;animation:scroll-x 26s linear infinite}
 .marquee-track span{
   font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;
-  font-size:clamp(34px,5vw,68px);line-height:1;padding:0 .35em;
+  font-size:clamp(26px,3.6vw,48px);line-height:1;padding:0 .35em;
   color:transparent;-webkit-text-stroke:1.6px var(--concrete);letter-spacing:.01em;
 }
 .marquee-track span.solid{color:var(--flame);-webkit-text-stroke:0}
@@ -135,7 +135,7 @@ header{
 
 /* ---------- Advantages ---------- */
 .adv-head{display:grid;grid-template-columns:auto 1fr;gap:30px;align-items:end;margin-bottom:54px}
-.adv-head h2{font-size:clamp(40px,6.4vw,96px)}
+.adv-head h2{font-size:clamp(32px,5vw,64px)}
 .adv-list{display:grid;gap:0;border-top:4px solid var(--ink)}
 .adv-row{
   display:grid;grid-template-columns:160px 1fr;gap:30px;align-items:start;
@@ -143,11 +143,11 @@ header{
 }
 .adv-row:hover{padding-left:14px}
 .adv-row .num{
-  font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(64px,9vw,128px);line-height:.78;
+  font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(48px,6.4vw,92px);line-height:.78;
   color:transparent;-webkit-text-stroke:2px var(--ink);letter-spacing:-.03em;transition:all .2s ease;
 }
 .adv-row:hover .num{color:var(--flame);-webkit-text-stroke:0}
-.adv-row .adv-body h3{font-size:clamp(26px,3.4vw,42px);margin-bottom:12px}
+.adv-row .adv-body h3{font-size:clamp(22px,2.8vw,34px);margin-bottom:12px}
 .adv-row .adv-body h3 em{font-style:normal;background:var(--flame);color:#fff;padding:0 .14em}
 .adv-row .adv-body p{max-width:680px;font-size:17px;font-weight:500;color:#2a2a2a}
 
@@ -156,10 +156,10 @@ header{
 .product-inner{padding:74px 0}
 .prod-meta{display:flex;align-items:flex-start;gap:22px;flex-wrap:wrap}
 .prod-bignum{
-  font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(120px,22vw,300px);line-height:.7;
+  font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(80px,14vw,176px);line-height:.7;
   color:var(--flame);letter-spacing:-.04em;pointer-events:none;
 }
-.prod-title{font-size:clamp(52px,10vw,150px);line-height:.82;margin:6px 0 0}
+.prod-title{font-size:clamp(40px,7.2vw,92px);line-height:.86;margin:6px 0 0}
 .prod-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:start;margin-top:40px}
 .prod-text .lead{font-size:clamp(18px,2vw,23px);font-weight:600;margin-bottom:26px;max-width:560px}
 .spec-list{border-top:3px solid var(--ink)}
@@ -298,6 +298,22 @@ footer{background:var(--concrete);border-top:8px solid var(--flame);padding:46px
 .reveal.in{opacity:1;transform:none}
 
 :focus-visible{outline:3px solid var(--flame);outline-offset:3px}
+
+/* ---------- Mobile hardening ---------- */
+h1,h2,h3,h4,.display,.hero-title,.prod-title{overflow-wrap:break-word;word-break:normal}
+.hero-grid,.hero-left,.prod-grid,.prod-grid>*{min-width:0}
+@media(max-width:600px){
+  .wrap{padding:0 16px}
+  .hero-left{padding:30px 16px 26px;min-width:0}
+  .hero-top-row{gap:7px;margin-bottom:18px}
+  .pill{font-size:9px;padding:5px 7px;letter-spacing:.04em;line-height:1.15}
+  .hero-title{font-size:clamp(42px,12.6vw,58px)}
+  .hero-sub{font-size:14.5px;max-width:100%}
+  .prod-title{font-size:clamp(38px,12vw,60px)}
+  .prod-bignum{font-size:clamp(76px,24vw,150px)}
+  .adv-head h2{font-size:clamp(34px,9vw,60px)}
+  .marquee-track span{font-size:clamp(30px,9vw,52px)}
+}
 
 /* ---------- Responsive ---------- */
 @media(max-width:1000px){
